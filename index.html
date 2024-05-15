@@ -11,10 +11,12 @@
 
 </head>
 <body>
+
 <header>
   <div class="heading-container"></div>
 </header>
-<div class="main-container">
+
+<div class="main-container" id="main-container">
   <div class="left-container">
     <div class="left-container-grid">
       <h1>Stay updated!</h1>
@@ -34,22 +36,19 @@
       </form>
     </div>
   </div>
+
   <div class="right-container">
     <img src="assets/images/illustration-sign-up-desktop.svg" alt="Image of windows and graphs">
   </div>
 </div>
 
-<!--Success message start
+<div id="success-message" class="hidden">
+  <img src="assets/images/icon-success.svg" alt="Check mark">
+  <h1>Thanks for subscribing!</h1>
+  <p> A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.</p>
+  <button>Dismiss message</button>
+</div>
 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  Success message end -->
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Joshua Conde</a>.
