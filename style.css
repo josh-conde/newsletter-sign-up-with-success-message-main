@@ -25,12 +25,12 @@ html {
 
 ul {
     list-style-image: url(assets/images/icon-list.svg);
-
 }
 
 li {
     line-height: 1.4;
     margin-left: 30px;
+    padding-top: 10px;
 }
 
 h1 {
@@ -87,10 +87,10 @@ label {
 
 input {
     width: 350px;
-    padding: 8px;
+    padding: 18px;
     border-radius: 8px;
     margin: 4px;
-    border-color: var(--color-charcoal);
+    border: 2px solid var(--color-grey);
 }
 
 button {
@@ -100,5 +100,41 @@ button {
     width: 350px; 
     border-radius: 8px;
     margin: 4px;
-    font-weight: 500;
+    font-weight: 700;
+    border: none;
+}
+
+button:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        width: 375px;
+        display: grid;
+        grid-template-rows: 200px 600px;
+        grid-template-columns: 350px;
+        padding: 10px;
+        border-radius: 0;
+    }
+    .heading-container {
+        display: none;
+    }
+
+    .right-container {
+        grid-row: 1 / span 1;
+        width: 350px;
+        background-image: url('assets/images/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        height: 200px;
+        border-radius: 8px;
+    }
+    
+    .right-container img{
+    display: none;
+
+    }
 }
