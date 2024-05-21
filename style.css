@@ -115,6 +115,7 @@ button:hover {
     display: none;
 }
 
+
 @media (max-width: 375px) {
     .main-container {
         width: 375px;

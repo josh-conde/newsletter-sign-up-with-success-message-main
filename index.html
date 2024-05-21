@@ -14,7 +14,8 @@
 <header>
   <div class="heading-container"></div>
 </header>
-<div class="main-container">
+
+<div class ="main-container" id="main-container">
   <div class="left-container">
     <div class="left-container-grid">
       <h1>Stay updated!</h1>
@@ -26,11 +27,11 @@
       </ul>
       <form id="form" novalidate>
         <div>
-          <label for="email">Email address</label>
+          <label for="email">Email address</label> <p id="popup-message" class="hidden">Valid Email Required</p>
           <input type="email" id="email" name="email" placeholder="email@company.com" />
           <span aria-live="polite" id="email-error"></span>
         </div>
-        <button>Subscribe to monthly newsletter</button>
+        <button id="btn">Subscribe to monthly newsletter</button>
       </form>
     </div>
   </div>
@@ -39,17 +40,13 @@
   </div>
 </div>
 
-<!--Success message start
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  Success message end -->
-  
+<div id="popup" class="hidden">
+  <img src="assets/images/icon-success.svg" alt="Red check mark">
+  <h1>Thanks for subscribing!</h1>
+  <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.</p>
+  <button onclick="dismissMessage()">Dismiss Message</button>
+</div>
+ 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Joshua Conde</a>.
