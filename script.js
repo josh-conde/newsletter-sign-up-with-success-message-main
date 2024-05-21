@@ -3,6 +3,7 @@ let btn = document.getElementById('btn');
 let popup = document.getElementById('popup');
 let mainContainer = document.getElementById('main-container');
 let errorMessage = document.getElementById('popup-message');
+let input = document.getElementById('input-email')
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -10,7 +11,7 @@ form.addEventListener("submit", function(event) {
     if (validateEmail(email)) {
         popup.classList.toggle('hidden');
         mainContainer.classList.toggle('hidden');
-        popup.style.width = '375px';
+        popup.style.width = '425px';
         popup.style.display = 'flex';
         popup.style.flexWrap = 'wrap';
         popup.style.alignItems = 'center';
@@ -18,6 +19,7 @@ form.addEventListener("submit", function(event) {
         popup.style.borderRadius = '8px';
         popup.style.backgroundColor = '#ffffff';
         popup.style.margin = '0 auto';
+        input.innerHTML(email);
     } else {
         errorMessage.classList.toggle('hidden');
         errorMessage.style.color = 'hsl(4, 100%, 67%)';
