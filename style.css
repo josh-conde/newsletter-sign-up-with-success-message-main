@@ -108,14 +108,24 @@ button:hover {
     opacity: .9;
     cursor: pointer;
     background-color:hsl(4, 100%, 67%);
+    box-shadow: 0 5px hsl(4, 100%, 90%);
     transition: ease-in .2s;
-    box-shadow: 0 5px hsl(4, 100%, 90%)
 }
 
 .hidden {
     display: none;
 }
 
+.visible {
+    width: 425px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
 
 @media (max-width: 375px) {
     .main-container {
@@ -126,8 +136,26 @@ button:hover {
         padding: 10px;
         border-radius: 0;
     }
+
     .heading-container {
         display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        width: 425px;
+        max-width: 100%;
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        margin: 0 auto;
     }
 
     .right-container {
